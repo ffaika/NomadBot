@@ -1,6 +1,7 @@
 
 import asyncio
 import json
+import os
 import re
 from datetime import datetime
 from pathlib import Path
@@ -18,10 +19,15 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from google import genai
 from google.genai import types as genai_types
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
+
 
 # ===================== НАСТРОЙКИ =====================
 TELEGRAM_TOKEN = "8304952125:AAHpWN8_W9SkGRye_Cs0USjYLthVfoVGBXo"
-GEMINI_API_KEY = "AIzaSyArF3k17OllqCarTCHLAKyZ0gr57OkjK9U"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 MODEL_NAME     = "gemini-3-flash-preview"
 
 TESTS_FILE = Path("tests.json")
