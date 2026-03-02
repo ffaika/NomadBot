@@ -21,7 +21,7 @@ from google.genai import types as genai_types
 
 # ===================== НАСТРОЙКИ =====================
 TELEGRAM_TOKEN = "8304952125:AAHpWN8_W9SkGRye_Cs0USjYLthVfoVGBXo"
-GEMINI_API_KEY = "AIzaSyA3txd_elRE-nO4yAlVGzrL0iwWO1WNESw"
+GEMINI_API_KEY = "AIzaSyArF3k17OllqCarTCHLAKyZ0gr57OkjK9U"
 MODEL_NAME     = "gemini-3-flash-preview"
 
 TESTS_FILE = Path("tests.json")
